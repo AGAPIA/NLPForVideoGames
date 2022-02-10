@@ -6,14 +6,38 @@ The repository contains the following:
 - Test Game
 - Joint Model for intent classification and slots filling
 - Question Answering model used to answer questions
+- Sound recognition model to recognize the audio from a local microphone
 
 ## Test Game
 
-The test game is a simple simulation in which several locations were created. Those locations are used in order to test the NLP models.
+The test game is a simple simulation in which several locations and contextual knowledge were created. Those locations are used in order to test the NLP models.
+The game contains a simple chat system used to communicate with the BOT using Natural Language, either in form of text or voice commands.
+In order to run the game **Unreal Engine 4.27** is required. The game can run either from the engine itself or can be built to test it.
 
-The game contains a simple chat system used to communicate with the BOT using Natural Language.
+## Installation guide
+1. Run the Joint Model – this can be done by going to the directory called JointModel and 
+running inference.py main. It will start a flask server on port 5000. Only first time, it will download the 
+30 pretrained models. If another training is required, then run train_joint_model.py which 
+will start the training process.
+2. Run the Question Answering Model – this can be done by going to the directory called 
+QuestionAnswering and running answer_question.py main. It will start a flask server on 
+port 5001. No training is required. The context can be changed from within 
+answer_question.py file, the global variable called CONTEXT. Another way of 
+changing the context is through a HTTP Post call on /context endpoint.
+2. Run the SpeechRecognition Model – this can be done by going to the directory called 
+SpeechRecognition and running inference.py main. It will start a flask server on 
+port 5002. 
+3. Open the project game using Unreal Engine 4, version 4.27. The game can be either ran 
+from withing the engine or can be built and ran from outside. 
+4. When running the game:
+ (a) Either give commands as text by pressing ENTER to insert data into the game chat and ask the bot agent
+for things.
+ (b) Either give audio commands by pressing CTRL + R then speak in your microphone. After pressing, until a pause in user voice is detected it will stop and request command from the bot.
+5. The game will call the localhost on port 5000 to run the Joint Model and wait for a 
+response, so the flask server must be up and running.
 
-In order to run the game **Unreal Engine 4.25** is required. The game can run either from the engine itself or can be built to test it.
+
+
 
 ## Joint Model
 
@@ -30,33 +54,7 @@ For more information about the Question Answering Model see `QuestionAnswering` 
 
 ## Examples
 
-### Question Answering
-
-1. Where can i heal?
-   
-![First Question](Demo/FirstQuestion.gif)
-
-2. which is th hardest dungeon in th game?
-
-![Second Question](Demo/SecondQuestion.gif)
-
-3. doom dungeon required level
-
-![Third Question](Demo/ThirdQuestion.gif)
-
-### Follow Action
-
-1. Get me to teleportr
-
-![First Follow](Demo/FirstFollow.gif)
-
-2. Get me to arm shp
-
-![Second Follow](Demo/SecondFollow.gif)
-
-3. show me castle of doom entrance
-
-![Third Follow](Demo/ThirdFollow.gif)
+Check the Presentation folder for demo movies and a high-level documentation.
 
 ## References
 
@@ -65,4 +63,4 @@ For more information about the Question Answering Model see `QuestionAnswering` 
 - [OpenAI Team, "Language Models are Few-Shot Learners", May 2020](https://arxiv.org/pdf/2005.14165.pdf) 
 - ["joint-intent-classification-and-slot-filling-based-on-BERT"](https://github.com/90217/joint-intent-classification-and-slot-filling-based-on-BERT)
 - [Moscow Institute of Physics and Technology (MIPT), "DeepPavlov"](https://github.com/deepmipt/DeepPavlov) 
-
+- CMU Sphinx model, https://cmusphinx.github.io/wiki/about/,  https://github.com/Uberi/speech_recognition
