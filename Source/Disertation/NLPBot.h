@@ -57,9 +57,18 @@ public:
 	UFUNCTION(BlueprintCallable)
 	void TakeUserInput(FString UserInput);
 
-	// Make request to flask server
+	// Take user audio
 	UFUNCTION(BlueprintCallable)
-	void MakeRequest(FString InputText);
+	void TakeUserAudio();
+
+	// Make text request to flask server
+	UFUNCTION(BlueprintCallable)
+	void MakeTextRequest(FString InputText);
+
+	// Make audio request to flask server
+	UFUNCTION(BlueprintCallable)
+	void MakeAudioRequest();
 
 	void OnResponseReceived(FHttpRequestPtr Request, FHttpResponsePtr Response, bool bWasSuccessful);
+	void OnAudioResponseReceived(FHttpRequestPtr Request, FHttpResponsePtr Response, bool bWasSuccessful);
 };

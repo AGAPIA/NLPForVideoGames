@@ -593,3 +593,647 @@ Predicted Location: Armor Shop
 ==========================
 
 
+Input Text: 
+Predicted Intent: AnswerQuestion
+Predicted Slots: []
+Predicted Question Answer: 
+==========================
+
+
+Input Text: hello
+Predicted Intent: AnswerQuestion
+Predicted Slots: [O]
+Predicted Question Answer: Teleporter teleports you to the desired location
+==========================
+
+
+Input Text: get me to teleportr
+Predicted Intent: FollowAction
+Predicted Slots: [O, O, O, B-location]
+Predicted Location: Teleporter
+==========================
+
+
+Input Text: find me a path to the teleportr
+Predicted Intent: FollowAction
+Predicted Slots: [O, O, O, O, O, O, B-location]
+Predicted Location: Teleporter
+==========================
+
+
+Input Text: where can i heal ?
+Predicted Intent: AnswerQuestion
+Predicted Slots: [O, O, O, O]
+Predicted Question Answer: Shrine heals your HP to maximum
+==========================
+
+
+Input Text: Where can i heal ?
+Predicted Intent: AnswerQuestion
+Predicted Slots: [O, O, O, O]
+Predicted Question Answer: Shrine heals your HP to maximum
+==========================
+
+
+Input Text: Which is the hardest dungeon in the game ?
+Predicted Intent: AnswerQuestion
+Predicted Slots: [O, O, O, O, O, O, O, O]
+Predicted Question Answer: Deep Sea Dungeon
+==========================
+
+
+Input Text: Get me to teleportr
+Predicted Intent: FollowAction
+Predicted Slots: [O, O, O, B-location]
+Predicted Location: Teleporter
+==========================
+
+
+Input Text: Get me to arm shp
+Predicted Intent: FollowAction
+Predicted Slots: [O, O, O, B-location, I-location]
+Predicted Location: Armor Shop
+==========================
+
+
+Input Text: get me to the weapon shop
+Predicted Intent: FollowAction
+Predicted Slots: [O, O, O, O, B-location, I-location]
+Predicted Location: Weapon Shop
+==========================
+
+
+Input Text: show me the castle of doom entrance
+Predicted Intent: FollowAction
+Predicted Slots: [O, O, O, B-location, I-location, I-location, O]
+Predicted Location: Castle Of Doom Dungeon
+==========================
+
+
+Input Text: show me where is the sea dungeaon entrance
+Predicted Intent: FollowAction
+Predicted Slots: [O, O, O, O, O, B-location, I-location, O]
+Predicted Location: Deep Sea Dungeon
+==========================
+
+
+Input Text: how about sea dungeon entrance ?
+Predicted Intent: AnswerQuestion
+Predicted Slots: [O, O, B-location, I-location, O]
+Predicted Question Answer: hardest
+==========================
+
+
+Input Text: can you take me to the sea sungeon entrance ?
+Predicted Intent: FollowAction
+Predicted Slots: [O, O, O, O, O, O, B-location, I-location, O]
+Predicted Location: Deep Sea Dungeon
+==========================
+
+
+Input Text: can you lead me to the sea dungeaon entrance ?
+Predicted Intent: FollowAction
+Predicted Slots: [O, O, O, O, O, O, B-location, I-location, O]
+Predicted Location: Deep Sea Dungeon
+==========================
+
+
+Input Text: where can i heal ?
+Predicted Intent: AnswerQuestion
+Predicted Slots: [O, O, O, O]
+Predicted Question Answer: Shrine heals your HP to maximum
+==========================
+
+
+Input Text: can you get me to weapon shop ?
+Predicted Intent: FollowAction
+Predicted Slots: [O, O, O, O, O, B-location, I-location]
+Predicted Location: Weapon Shop
+==========================
+
+
+Input Text: can you lead me to heal shop ?
+Predicted Intent: FollowAction
+Predicted Slots: [O, O, O, O, O, B-location, I-location]
+Predicted Location: Weapon Shop
+==========================
+
+
+Input Text: can you lead me to potion shop ?
+Predicted Intent: FollowAction
+Predicted Slots: [O, O, O, O, O, B-location, I-location]
+Predicted Location: Potion Shop
+==========================
+
+
+Input Text: how about armor shop ?
+Predicted Intent: AnswerQuestion
+Predicted Slots: [O, O, B-location, I-location]
+Predicted Question Answer: requires you to pay a fee depending on the level of your armor
+==========================
+
+
+Input Text: crap
+Predicted Intent: AnswerQuestion
+Predicted Slots: [O]
+Predicted Question Answer: Teleporter teleports you to the desired location
+==========================
+
+
+Input Text: can you say which is the hardest dungeon in the game ?
+Predicted Intent: AnswerQuestion
+Predicted Slots: [O, O, O, O, O, O, O, O, O, O, O]
+Predicted Question Answer: Deep Sea Dungeon
+==========================
+
+
+Input Text: can you take me then to the deep sea ?
+Predicted Intent: FollowAction
+Predicted Slots: [O, O, O, O, O, O, O, B-location, I-location]
+Predicted Location: Deep Sea Dungeon
+==========================
+
+
+Input Text: but how about dragon entrance ?
+Predicted Intent: AnswerQuestion
+Predicted Slots: [O, O, O, B-location, I-location]
+Predicted Question Answer: 10 gold
+==========================
+
+
+Input Text: can you lead me to the dragon entrance ?
+Predicted Intent: FollowAction
+Predicted Slots: [O, O, O, O, O, O, B-location, I-location]
+Predicted Location: Dragon Dungeon
+==========================
+
+
+Input Text: where can i heal ?
+Predicted Intent: AnswerQuestion
+Predicted Slots: [O, O, O, O]
+Predicted Question Answer: Shrine heals your HP to maximum
+==========================
+
+
+Input Text: get me to the teleportr
+Predicted Intent: FollowAction
+Predicted Slots: [O, O, O, O, B-location]
+Predicted Location: Teleporter
+==========================
+
+
+Input Text: where can i buy weapons ?
+Predicted Intent: AnswerQuestion
+Predicted Slots: [O, O, O, O, O]
+Predicted Question Answer: Weapon Shop
+==========================
+
+
+Input Text: can you take me to the wepon shp ?
+Predicted Intent: FollowAction
+Predicted Slots: [O, O, O, O, O, O, B-location, I-location]
+Predicted Location: Weapon Shop
+==========================
+
+
+Input Text: how about the weapon shop ?
+Predicted Intent: AnswerQuestion
+Predicted Slots: [O, O, O, B-location, I-location]
+Predicted Question Answer: You can buy weapons
+==========================
+
+
+Input Text: how about potion shop ?
+Predicted Intent: AnswerQuestion
+Predicted Slots: [O, O, B-location, I-location]
+Predicted Question Answer: 20 silver a piece
+==========================
+
+
+Input Text: where is the potion shop ?
+Predicted Intent: AnswerQuestion
+Predicted Slots: [O, O, O, B-location, I-location]
+Predicted Question Answer: any major city
+==========================
+
+
+Input Text: take me to the weapon shop
+Predicted Intent: FollowAction
+Predicted Slots: [O, O, O, O, B-location, I-location]
+Predicted Location: Weapon Shop
+==========================
+
+
+Input Text: this game is too difficult
+Predicted Intent: AnswerQuestion
+Predicted Slots: [O, O, O, O, O]
+Predicted Question Answer: Deep Sea Dungeon is the hardest dungeon in the game
+==========================
+
+
+Input Text: how about bosses in Deep Sea Dungeon ?
+Predicted Intent: AnswerQuestion
+Predicted Slots: [O, O, O, O, B-location, I-location, I-location]
+Predicted Question Answer: 3
+==========================
+
+
+Input Text: which bosses in sea dungeon ?
+Predicted Intent: AnswerQuestion
+Predicted Slots: [O, O, O, B-location, I-location]
+Predicted Question Answer: Sea Monster, Atlantis General and Atlan: King of Atlantis
+==========================
+
+
+Input Text: 
+Predicted Intent: AnswerQuestion
+Predicted Slots: []
+Predicted Question Answer: 
+==========================
+
+
+Input Text: 
+Predicted Intent: AnswerQuestion
+Predicted Slots: []
+Predicted Question Answer: 
+==========================
+
+
+Input Text: hello can you hear me
+Predicted Intent: AnswerQuestion
+Predicted Slots: [O, O, O, O, O]
+Predicted Question Answer: Teleporter lets you choose different locations to teleport to
+==========================
+
+
+Input Text: what is the hardest map
+Predicted Intent: AnswerQuestion
+Predicted Slots: [O, O, O, O, O]
+Predicted Question Answer: Deep Sea Dungeon is the hardest dungeon in the game
+==========================
+
+
+Input Text: can you take me there please
+Predicted Intent: FollowAction
+Predicted Slots: [O, O, O, O, O, O]
+Predicted Location: Didn't find any SLOTS
+==========================
+
+
+Input Text: can you take me to the BBC
+Predicted Intent: FollowAction
+Predicted Slots: [O, O, O, O, O, O, B-location]
+Predicted Location: SLOTS were found but no proper location could be chosen!!
+==========================
+
+
+Input Text: can you take me to the deep sea dungeon
+Predicted Intent: FollowAction
+Predicted Slots: [O, O, O, O, O, O, B-location, I-location, I-location]
+Predicted Location: Deep Sea Dungeon
+==========================
+
+
+Input Text: can you
+Predicted Intent: AnswerQuestion
+Predicted Slots: [O, O]
+Predicted Question Answer: You can buy weapons at the Weapon Shop
+==========================
+
+
+Input Text: where can I buy weapons
+Predicted Intent: AnswerQuestion
+Predicted Slots: [O, O, O, O, O]
+Predicted Question Answer: Weapon Shop
+==========================
+
+
+Input Text: can you take me to the weapon shop then
+Predicted Intent: FollowAction
+Predicted Slots: [O, O, O, O, O, O, B-location, I-location, O]
+Predicted Location: Weapon Shop
+==========================
+
+
+Input Text: what is the difficulty level for the deepsea Challenger
+Predicted Intent: AnswerQuestion
+Predicted Slots: [O, O, O, O, O, O, O, B-location, I-location]
+Predicted Question Answer: The teleporter will cost you 10 gold for each teleportation
+==========================
+
+
+Input Text: how much will teleporter cost me
+Predicted Intent: AnswerQuestion
+Predicted Slots: [O, O, O, B-location, O, O]
+Predicted Question Answer: 10 gold
+==========================
+
+
+Input Text: can you take me there please
+Predicted Intent: FollowAction
+Predicted Slots: [O, O, O, O, O, O]
+Predicted Location: Didn't find any SLOTS
+==========================
+
+
+Input Text: can you take me to the airport Arden
+Predicted Intent: FollowAction
+Predicted Slots: [O, O, O, O, O, O, O, O]
+Predicted Location: Didn't find any SLOTS
+==========================
+
+
+Input Text: take me to the teleporter
+Predicted Intent: FollowAction
+Predicted Slots: [O, O, O, O, B-location]
+Predicted Location: Teleporter
+==========================
+
+
+Input Text: how can I teleport faster to different locations how can I teleport faster
+Predicted Intent: AnswerQuestion
+Predicted Slots: [O, O, O, O, O, O, O, O, O, O, O]
+Predicted Question Answer: Teleporter lets you choose different locations to teleport to
+==========================
+
+
+Input Text: how can I move faster to desired locations
+Predicted Intent: AnswerQuestion
+Predicted Slots: [O, O, O, O, O, O, O, O]
+Predicted Question Answer: In order to use the teleporter just interact with it and choose a location
+==========================
+
+
+Input Text: can you take me to the airport
+Predicted Intent: FollowAction
+Predicted Slots: [O, O, O, O, O, O, B-location]
+Predicted Location: Armor Shop
+==========================
+
+
+Input Text: can you take me to the teleporter
+Predicted Intent: FollowAction
+Predicted Slots: [O, O, O, O, O, O, B-location]
+Predicted Location: Teleporter
+==========================
+
+
+Input Text: how much is teleporter cost how much does it cost
+Predicted Intent: AnswerQuestion
+Predicted Slots: [O, O, O, B-location, O, O, O, O, O, O]
+Predicted Question Answer: 10 gold
+==========================
+
+
+Input Text: how can I travel to big cities in the game how can I travel
+Predicted Intent: AnswerQuestion
+Predicted Slots: [O, O, O, O, O, O, O, O, O, O, O, O, O, O]
+Predicted Question Answer: Teleporter will also help you teleport to other big cities in the game and dungeon entrances
+==========================
+
+
+Input Text: how can I travel to big cities
+Predicted Intent: AnswerQuestion
+Predicted Slots: [O, O, O, O, O, O, O]
+Predicted Question Answer: Teleporter will also help you teleport to other big cities in the game and dungeon entrances
+==========================
+
+
+Input Text: can you take me to the teleporter
+Predicted Intent: FollowAction
+Predicted Slots: [O, O, O, O, O, O, B-location]
+Predicted Location: Teleporter
+==========================
+
+
+Input Text: how much does it cost
+Predicted Intent: AnswerQuestion
+Predicted Slots: [O, O, O, O, O]
+Predicted Question Answer: 10 gold for each teleportation
+==========================
+
+
+Input Text: that's too much for me
+Predicted Intent: AnswerQuestion
+Predicted Slots: [O, O, O, O, O]
+Predicted Question Answer: The teleporter will cost you 10 gold for each teleportation
+==========================
+
+
+Input Text: what is the hardest Dungeon in this game
+Predicted Intent: AnswerQuestion
+Predicted Slots: [O, O, O, O, O, O, O, O]
+Predicted Question Answer: Deep Sea Dungeon
+==========================
+
+
+Input Text: can you take me to the deep sea then
+Predicted Intent: FollowAction
+Predicted Slots: [O, O, O, O, O, O, B-location, I-location, O]
+Predicted Location: Deep Sea Dungeon
+==========================
+
+
+Input Text: what buses are in the deep sea
+Predicted Intent: AnswerQuestion
+Predicted Slots: [O, O, O, O, O, B-location, I-location]
+Predicted Question Answer: Deep Sea Dungeon
+==========================
+
+
+Input Text: what buses are in the deep season
+Predicted Intent: AnswerQuestion
+Predicted Slots: [O, O, O, O, O, O, O]
+Predicted Question Answer: Deep Sea Dungeon
+==========================
+
+
+Input Text: where can I find Frankenstein boss
+Predicted Intent: AnswerQuestion
+Predicted Slots: [O, O, O, O, O, O]
+Predicted Question Answer: Castle of Doom dungeon
+==========================
+
+
+Input Text: can you take me to the castle of Doom
+Predicted Intent: FollowAction
+Predicted Slots: [O, O, O, O, O, O, B-location, I-location, I-location]
+Predicted Location: Castle Of Doom Dungeon
+==========================
+
+
+Input Text: how can I travel to big cities
+Predicted Intent: AnswerQuestion
+Predicted Slots: [O, O, O, O, O, O, O]
+Predicted Question Answer: Teleporter will also help you teleport to other big cities in the game and dungeon entrances
+==========================
+
+
+Input Text: how can I travel to big cities
+Predicted Intent: AnswerQuestion
+Predicted Slots: [O, O, O, O, O, O, O]
+Predicted Question Answer: Teleporter will also help you teleport to other big cities in the game and dungeon entrances
+==========================
+
+
+Input Text: can you take me to the teleporter
+Predicted Intent: FollowAction
+Predicted Slots: [O, O, O, O, O, O, B-location]
+Predicted Location: Teleporter
+==========================
+
+
+Input Text: how much does it cost
+Predicted Intent: AnswerQuestion
+Predicted Slots: [O, O, O, O, O]
+Predicted Question Answer: 10 gold for each teleportation
+==========================
+
+
+Input Text: destiny Mars for me
+Predicted Intent: FollowAction
+Predicted Slots: [O, O, O, O]
+Predicted Location: Didn't find any SLOTS
+==========================
+
+
+Input Text: what is the hardest Dungeon in this game
+Predicted Intent: AnswerQuestion
+Predicted Slots: [O, O, O, O, O, O, O, O]
+Predicted Question Answer: Deep Sea Dungeon
+==========================
+
+
+Input Text: can you take me to the deep sea then
+Predicted Intent: FollowAction
+Predicted Slots: [O, O, O, O, O, O, B-location, I-location, O]
+Predicted Location: Deep Sea Dungeon
+==========================
+
+
+Input Text: where can I find Frankenstein books
+Predicted Intent: AnswerQuestion
+Predicted Slots: [O, O, O, O, O, O]
+Predicted Question Answer: Castle of Doom dungeon
+==========================
+
+
+Input Text: what before going there where can I buy some new weapons and upgrades
+Predicted Intent: AnswerQuestion
+Predicted Slots: [O, O, O, O, O, O, O, O, O, O, O, O, O]
+Predicted Question Answer: Armor Shop
+==========================
+
+
+Input Text: can you leave my way to learn WhatsApp
+Predicted Intent: AnswerQuestion
+Predicted Slots: [O, O, O, O, O, O, O, O]
+Predicted Question Answer: You can buy weapons at the Weapon Shop
+==========================
+
+
+Input Text: can you take me to the castle of Doom please
+Predicted Intent: FollowAction
+Predicted Slots: [O, O, O, O, O, O, B-location, I-location, I-location, O]
+Predicted Location: Castle Of Doom Dungeon
+==========================
+
+
+Input Text: how can I travel to big city
+Predicted Intent: AnswerQuestion
+Predicted Slots: [O, O, O, O, O, B-location, O]
+Predicted Question Answer: You can get better gear at Weapon Shop and Armor Shop in every city
+==========================
+
+
+Input Text: how can I travel to big cities
+Predicted Intent: AnswerQuestion
+Predicted Slots: [O, O, O, O, O, O, O]
+Predicted Question Answer: Teleporter will also help you teleport to other big cities in the game and dungeon entrances
+==========================
+
+
+Input Text: how can I travel to big cities
+Predicted Intent: AnswerQuestion
+Predicted Slots: [O, O, O, O, O, O, O]
+Predicted Question Answer: Teleporter will also help you teleport to other big cities in the game and dungeon entrances
+==========================
+
+
+Input Text: can you take me to the teleporter
+Predicted Intent: FollowAction
+Predicted Slots: [O, O, O, O, O, O, B-location]
+Predicted Location: Teleporter
+==========================
+
+
+Input Text: how much does it cost
+Predicted Intent: AnswerQuestion
+Predicted Slots: [O, O, O, O, O]
+Predicted Question Answer: 10 gold for each teleportation
+==========================
+
+
+Input Text: that's too much for me
+Predicted Intent: AnswerQuestion
+Predicted Slots: [O, O, O, O, O]
+Predicted Question Answer: The teleporter will cost you 10 gold for each teleportation
+==========================
+
+
+Input Text: what is the hardest puncher in this game what is the hardest dungeon
+Predicted Intent: AnswerQuestion
+Predicted Slots: [O, O, O, O, O, O, O, O, O, O, O, O, O]
+Predicted Question Answer: Deep Sea Dungeon
+==========================
+
+
+Input Text: how can I travel to dungeons
+Predicted Intent: AnswerQuestion
+Predicted Slots: [O, O, O, O, O, O]
+Predicted Question Answer: Teleporter will also help you teleport to other big cities in the game and dungeon entrances
+==========================
+
+
+Input Text: can you take me to the teleporter
+Predicted Intent: FollowAction
+Predicted Slots: [O, O, O, O, O, O, B-location]
+Predicted Location: Teleporter
+==========================
+
+
+Input Text: how much does it cost how much does it cost
+Predicted Intent: AnswerQuestion
+Predicted Slots: [O, O, O, O, O, O, O, O, O, O]
+Predicted Question Answer: 10 gold for each teleportation
+==========================
+
+
+Input Text: what is the hardest Dungeon in this game
+Predicted Intent: AnswerQuestion
+Predicted Slots: [O, O, O, O, O, O, O, O]
+Predicted Question Answer: Deep Sea Dungeon
+==========================
+
+
+Input Text: can you take me to the deep sea then
+Predicted Intent: FollowAction
+Predicted Slots: [O, O, O, O, O, O, B-location, I-location, O]
+Predicted Location: Deep Sea Dungeon
+==========================
+
+
+Input Text: but where can I find a Frankenstein boss
+Predicted Intent: AnswerQuestion
+Predicted Slots: [O, O, O, O, O, O, O, O]
+Predicted Question Answer: Castle of Doom dungeon
+==========================
+
+
+Input Text: where is Castle of Doom dungeon
+Predicted Intent: AnswerQuestion
+Predicted Slots: [O, O, B-location, I-location, I-location, I-location]
+Predicted Question Answer: Castle of Doom dungeon requires a party of 3 people and at least level 30
+==========================
+
+

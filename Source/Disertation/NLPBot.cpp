@@ -48,17 +48,29 @@ void ANLPBot::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 
 }
 
-void ANLPBot::TakeUserInput(FString UserInput) {
+void ANLPBot::TakeUserInput(FString UserInput)
+{
 	if (bIsBotThinking)
 	{
 		return;
 	}
 	
 	bIsBotThinking = true;
-	MakeRequest(UserInput);
+	MakeTextRequest(UserInput);
 }
 
-void ANLPBot::MakeRequest(FString InputText)
+void ANLPBot::TakeUserAudio()
+{
+	if (bIsBotThinking)
+	{
+		return;
+	}
+	
+	bIsBotThinking = true;
+	MakeAudioRequest();
+}
+
+void ANLPBot::MakeTextRequest(FString InputText)
 {
 	FHttpModule* Http = &FHttpModule::Get();
 
@@ -67,6 +79,21 @@ void ANLPBot::MakeRequest(FString InputText)
 	
 	//This is the url on which to process the request
 	Request->SetURL("http://127.0.0.1:5000/inference?text=" + FGenericPlatformHttp::UrlEncode(InputText));
+	Request->SetVerb("GET");
+	Request->SetHeader(TEXT("User-Agent"), "X-UnrealEngine-Agent");
+
+	Request->ProcessRequest();
+}
+
+void ANLPBot::MakeAudioRequest()
+{
+	FHttpModule* Http = &FHttpModule::Get();
+
+	TSharedRef<IHttpRequest, ESPMode::ThreadSafe> Request = Http->CreateRequest();
+	Request->OnProcessRequestComplete().BindUObject(this, &ANLPBot::OnAudioResponseReceived);
+	
+	//This is the url on which to process the request
+	Request->SetURL("http://127.0.0.1:5002/listenfrommic");
 	Request->SetVerb("GET");
 	Request->SetHeader(TEXT("User-Agent"), "X-UnrealEngine-Agent");
 
@@ -84,6 +111,34 @@ void ANLPBot::OnResponseReceived(FHttpRequestPtr Request, FHttpResponsePtr Respo
 		if (FJsonSerializer::Deserialize(JsonReader, JsonParsed))
 		{
 			DoAction(JsonParsed);
+		}
+		else
+		{
+			SendMessageToChat("Didn't catch that!");
+		}
+	} else
+	{
+		SendMessageToChat("Didn't catch that!");
+	}
+
+	// Bot ended the requested action
+	bIsBotThinking = false;
+}
+
+void ANLPBot::OnAudioResponseReceived(FHttpRequestPtr Request, FHttpResponsePtr Response, bool bWasSuccessful)
+{
+	if (bWasSuccessful)
+	{
+		const FString ResponseString = Response->GetContentAsString();
+
+		TSharedPtr<FJsonObject> JsonParsed;
+		const TSharedRef<TJsonReader<TCHAR>> JsonReader = TJsonReaderFactory<TCHAR>::Create(ResponseString);
+		if (FJsonSerializer::Deserialize(JsonReader, JsonParsed))
+		{
+			FString ChatAnswer = JsonParsed->GetStringField("textRecognized");
+
+			// So now that we understood an audio message, create a text request
+			MakeTextRequest(ChatAnswer);
 		}
 		else
 		{

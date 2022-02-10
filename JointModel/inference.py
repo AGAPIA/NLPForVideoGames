@@ -153,4 +153,4 @@ if __name__ == "__main__":
     # Create the model
     model = JointIntentClassificationSlotsFillingModel(is_training=False)
     # Run the server
-    app.run(debug=True)
+    app.run(debug=True, port=5000)

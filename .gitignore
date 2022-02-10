@@ -30,3 +30,6 @@ JointModel/joint_intent_slot_filling/__pycache__
 QuestionAnswering/.idea
 QuestionAnswering/venv
 QuestionAnswering/question_answering/__pycache__
+QuestionAnswering/env22
+QuestionAnswering/tf1env
+SpeechRecognition/swigwin-4.0.2

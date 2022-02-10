@@ -3,6 +3,14 @@ from question_answering.question_answering import QuestionAnsweringModel
 from flask import Flask
 from flask import request
 
+
+import os
+SHOULD_USE_GPU = False
+#print(os.environ["CUDA_VISIBLE_DEVICES"])
+if SHOULD_USE_GPU is False:
+    os.environ["CUDA_VISIBLE_DEVICES"]="-1"
+#print(os.environ["CUDA_VISIBLE_DEVICES"])
+
 app = Flask(__name__)
 model = None
 # This is the context where the answers will come from.
